@@ -1,0 +1,151 @@
+
+const Positions = require('../models/positions.model.js');
+
+// Create and Save a new Data
+exports.create = (req, res) => {
+
+    // Create a Data
+    const positions = new Positions({
+        name                            : req.body.name, 
+        position_name                   : req.body.position_name,
+        sport_id                        : req.body.sport_id,
+        sport_name                      : req.body.sport_name,
+        created_uid                     : req.body.created_uid,
+        updated_uid                     : req.body.updated_uid,
+        sort_order                      : req.body.sort_order,
+        parent_position_name            : req.body.parent_position_name,
+        parent_position_id              : req.body.parent_position_id,
+        abbreviation                    : req.body.abbreviation,
+        created_datetime                : req.body.created_datetime,
+        updated_datetime                : req.body.updated_datetime
+    });
+
+    // Save Data in the database
+    positions.save()
+    .then(data => {
+    
+          if( data._id ){
+                    var json = {
+                              name                            : req.body.name, 
+                            position_name                   : req.body.position_name,
+                            sport_id                        : req.body.sport_id,
+                            sport_name                      : req.body.sport_name,
+                            created_uid                     : req.body.created_uid,
+                            updated_uid                     : req.body.updated_uid,
+                            sort_order                      : req.body.sort_order,
+                            position_id                     : data._id,
+                            parent_position_name            : req.body.parent_position_name,
+                            parent_position_id              : req.body.parent_position_id,
+                            abbreviation                    : req.body.abbreviation,
+                            created_datetime                : req.body.created_datetime,
+                            updated_datetime                : req.body.updated_datetime
+                    }
+                    
+                    Positions.findByIdAndUpdate(data._id, json, {new: true}, function (err, place) {
+                      res.send(data);
+                    });
+          }
+        //res.send(data);
+    }).catch(err => {updated_datetime
+        res.status(500).send({
+            message: err.message || "Some error occurred while creating the Data."
+        });
+    });
+    
+};
+
+// Retrieve and return all Data from the database.
+exports.findAll = (req, res) => {
+          
+        
+          Positions.find()
+              .then(positions => {
+                  res.send(positions);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
+// Find a single Data with a DataId
+exports.findOne = (req, res) => {
+          
+          Positions.findById(req.params.id)
+    .then(positions => {
+        if(!positions) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });            
+        }
+        res.send(positions);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error retrieving with id " + req.params.id
+        });
+    });
+    
+};
+
+// Update a Data identified by the DataId in the request
+exports.update = (req, res) => {
+
+    // Find Data and update it with the request body
+    Positions.findByIdAndUpdate(req.params.id, {
+        name                            : req.body.name, 
+        position_name                   : req.body.position_name,
+        sport_id                        : req.body.sport_id,
+        sport_name                      : req.body.sport_name,
+        updated_uid                     : req.body.updated_uid,
+        sort_order                      : req.body.sort_order,
+        parent_position_name            : req.body.parent_position_name,
+        parent_position_id              : req.body.parent_position_id,
+        abbreviation                    : req.body.abbreviation,
+        updated_datetime                : req.body.updated_datetime
+    }, {new: true})
+    .then(positions => {
+        if(!positions) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send(positions);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating with id " + req.params.id
+        });
+    });
+    
+};
+
+// Delete a Data with the specified dataId in the request
+exports.delete = (req, res) => {
+          Positions.findByIdAndRemove(req.params.id)
+    .then(positions => {
+        if(!positions) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send({message: "Data deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Could not delete with id " + req.params.id
+        });
+    });
+};

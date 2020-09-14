@@ -1,0 +1,153 @@
+
+const Levels = require('../models/levels.model.js');
+
+// Create and Save a new Data
+exports.create = (req, res) => {
+
+    // Create a Data
+    const levels = new Levels({
+        level_name              : req.body.level_name, 
+        abbreviation            : req.body.abbreviation,
+        description             : req.body.description,
+        organization_id         : req.body.organization_id,
+        sport_id                : req.body.sport_id,
+        sport_name              : req.body.sport_name,
+        is_active               : req.body.is_active,
+        is_deleted              : req.body.is_deleted,
+        created_uid             : req.body.created_uid,
+        updated_uid             : req.body.updated_uid,
+        created_datetime        : req.body.created_datetime,
+        updated_datetime        : req.body.updated_datetime
+    });
+
+    // Save Data in the database
+    levels.save()
+    .then(data => {
+    
+              if( data._id ){
+                    var json = {
+                              level_name              : req.body.level_name, 
+                            abbreviation            : req.body.abbreviation,
+                            description             : req.body.description,
+                            organization_id         : req.body.organization_id,
+                            sport_id                : req.body.sport_id,
+                            sport_name              : req.body.sport_name,
+                            level_id                : data._id,
+                            is_active               : req.body.is_active,
+                            is_deleted              : req.body.is_deleted,
+                            created_uid             : req.body.created_uid,
+                            updated_uid             : req.body.updated_uid,
+                            created_datetime        : req.body.created_datetime,
+                            updated_datetime        : req.body.updated_datetime
+                    }
+                    
+                    Levels.findByIdAndUpdate(data._id, json, {new: true}, function (err, place) {
+                      res.send(data);
+                    });
+                    
+              }
+        //res.send(data);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while creating the Data."
+        });
+    });
+    
+};
+
+// Retrieve and return all Data from the database.
+exports.findAll = (req, res) => {
+          
+        
+          Levels.find()
+              .then(levels => {
+                  res.send(levels);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
+// Find a single Data with a DataId
+exports.findOne = (req, res) => {
+          
+          Levels.findById(req.params.id)
+    .then(levels => {
+        if(!levels) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });            
+        }
+        res.send(levels);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error retrieving with id " + req.params.id
+        });
+    });
+    
+};
+
+// Update a Data identified by the DataId in the request
+exports.update = (req, res) => {
+
+    // Find Data and update it with the request body
+    Levels.findByIdAndUpdate(req.params.id, {
+        level_name              : req.body.level_name, 
+        abbreviation            : req.body.abbreviation,
+        description             : req.body.description,
+        organization_id         : req.body.organization_id,
+        sport_id                : req.body.sport_id,
+        sport_name              : req.body.sport_name,
+        is_active               : req.body.is_active,
+        is_deleted              : req.body.is_deleted,
+        
+        updated_uid             : req.body.updated_uid,
+        updated_datetime        : req.body.updated_datetime
+    }, {new: true})
+    .then(levels => {
+        if(!levels) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send(levels);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating with id " + req.params.id
+        });
+    });
+    
+};
+
+// Delete a Data with the specified dataId in the request
+exports.delete = (req, res) => {
+          Levels.findByIdAndRemove(req.params.id)
+    .then(levels => {
+        if(!levels) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send({message: "Data deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Could not delete with id " + req.params.id
+        });
+    });
+};

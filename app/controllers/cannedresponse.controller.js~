@@ -1,0 +1,159 @@
+
+const Cannedresponse = require('../models/cannedresponse.model.js');
+
+// Create and Save a new Data
+exports.create = (req, res) => {
+
+    // Create a Data
+    const cannedresponse = new Cannedresponse({
+        cannedResponseTitle                   : req.body.cannedResponseTitle, 
+        canned_response_title                 : req.body.canned_response_title,
+        cannedResponseDesc                    : req.body.cannedResponseDesc,
+        canned_response_description           : req.body.canned_response_description,
+        organization_id                       : req.body.organization_id,
+        organization_name                     : req.body.organization_name,
+        sport_id                              : req.body.sport_id,
+        sport_name                            : req.body.sport_name,
+        organization_abbreviation             : req.body.organization_abbreviation,
+        is_active                             : req.body.is_active,
+        is_deleted                            : req.body.is_deleted,
+        created_uid                           : req.body.created_uid,
+        updated_uid                           : req.body.updated_uid,
+        created_datetime                      : req.body.created_datetime,
+        updated_datetime                      : req.body.updated_datetime
+    });
+
+    // Save Data in the database
+    cannedresponse.save()
+    .then(data => {
+    
+          if( data._id ){
+                    var json = {
+                              cannedResponseTitle                   : req.body.cannedResponseTitle, 
+                            canned_response_title                 : req.body.canned_response_title,
+                            cannedResponseDesc                    : req.body.cannedResponseDesc,
+                            canned_response_description           : req.body.canned_response_description,
+                            organization_id                       : req.body.organization_id,
+                            organization_name                     : req.body.organization_name,
+                            sport_id                              : req.body.sport_id,
+                            sport_name                            : req.body.sport_name,
+                            organization_abbreviation             : req.body.organization_abbreviation,
+                            is_active                             : req.body.is_active,
+                            is_deleted                            : req.body.is_deleted,
+                            created_uid                           : req.body.created_uid,
+                            updated_uid                           : req.body.updated_uid,
+                            created_datetime                      : req.body.created_datetime,
+                            updated_datetime                      : req.body.updated_datetime
+                    }
+                    
+                    Cannedresponse.findByIdAndUpdate(data._id, json, {new: true}, function (err, place) {
+                      res.send(data);
+                    });
+          }
+        //res.send(data);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while creating the Data."
+        });
+    });
+    
+};
+
+// Retrieve and return all Data from the database.
+exports.findAll = (req, res) => {
+          
+       
+          Cannedresponse.find()
+              .then(cres => { 
+                  res.send(cres);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
+// Find a single Data with a DataId
+exports.findOne = (req, res) => {
+          
+          Cannedresponse.findById(req.params.id)
+    .then(cannedresponse => {
+        if(!cannedresponse) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });            
+        }
+        res.send(cannedresponse);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error retrieving with id " + req.params.id
+        });
+    });
+    
+};
+
+// Update a Data identified by the DataId in the request
+exports.update = (req, res) => {
+
+    // Find Data and update it with the request body
+    Cannedresponse.findByIdAndUpdate(req.params.id, {
+        cannedResponseTitle                   : req.body.cannedResponseTitle, 
+        canned_response_title                 : req.body.canned_response_title,
+        cannedResponseDesc                    : req.body.cannedResponseDesc,
+        canned_response_description           : req.body.canned_response_description,
+        organization_id                       : req.body.organization_id,
+        organization_name                     : req.body.organization_name,
+        sport_id                              : req.body.sport_id,
+        sport_name                            : req.body.sport_name,
+        organization_abbreviation             : req.body.organization_abbreviation,
+        is_active                             : req.body.is_active,
+        is_deleted                            : req.body.is_deleted,
+        updated_uid                           : req.body.updated_uid,
+        updated_datetime                      : req.body.updated_datetime
+    }, {new: true})
+    .then(cannedresponse => {
+        if(!cannedresponse) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send(cannedresponse);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating with id " + req.params.id
+        });
+    });
+    
+};
+
+// Delete a Data with the specified dataId in the request
+exports.delete = (req, res) => {
+          Cannedresponse.findByIdAndRemove(req.params.id)
+    .then(cannedresponse => {
+        if(!cannedresponse) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send({message: "Data deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Could not delete with id " + req.params.id
+        });
+    });
+};

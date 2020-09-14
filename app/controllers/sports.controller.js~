@@ -1,0 +1,171 @@
+
+const Sports = require('../models/sports.model.js');
+
+// Create and Save a new Data
+exports.create = (req, res) => {
+
+    //validation
+    if(!req.body.country_code) {
+        return res.status(400).send({
+            message: "Country code can not be empty"
+        });
+    }
+    if(!req.body.country) {
+        return res.status(400).send({
+            message: "Country can not be empty"
+        });
+    }
+    if(!req.body.name) {
+        return res.status(400).send({
+            message: "Sportsname can not be empty"
+        });
+    }
+    // Create a Data
+    const sports = new Sports({
+        country                      : req.body.country, 
+        country_code                 : req.body.country_code,
+        name                         : req.body.name,
+        sport                        : req.body.sport,
+        created_datetime             : req.body.created_datetime,
+        updated_datetime             : req.body.updated_datetime,
+        created_uid                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+    });
+
+    // Save Data in the database
+    sports.save()
+    .then(data => {
+    
+          if( data._id ){
+          
+                    var json = {
+                              country                      : req.body.country, 
+                            country_code                 : req.body.country_code,
+                            sport_id                     : data._id,
+                            name                         : req.body.name,
+                            sport                        : req.body.sport,
+                            created_datetime             : req.body.created_datetime,
+                            updated_datetime             : req.body.updated_datetime,
+                            created_uid                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+                    }
+                    
+                    Sports.findByIdAndUpdate(data._id, json, {new: true}, function (err, place) {
+                      res.send(data);
+                    });
+          
+          }
+        //res.send(data);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while creating the Data."
+        });
+    });
+    
+};
+
+// Retrieve and return all Data from the database.
+exports.findAll = (req, res) => {
+          
+        
+          Sports.find()
+              .then(sports => {
+                  res.send(sports);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
+// Find a single Data with a DataId
+exports.findOne = (req, res) => {
+          
+          Sports.findById(req.params.id)
+    .then(sports => {
+        if(!sports) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });            
+        }
+        res.send(sports);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error retrieving with id " + req.params.id
+        });
+    });
+    
+};
+
+// Update a Data identified by the DataId in the request
+exports.update = (req, res) => {
+
+    //validation
+    if(!req.body.country_code) {
+        return res.status(400).send({
+            message: "Country code can not be empty"
+        });
+    }
+    if(!req.body.country) {
+        return res.status(400).send({
+            message: "Country can not be empty"
+        });
+    }
+    if(!req.body.name) {
+        return res.status(400).send({
+            message: "Sportsname can not be empty"
+        });
+    }
+    // Find Data and update it with the request body
+    Sports.findByIdAndUpdate(req.params.id, {
+        country                      : req.body.country, 
+        country_code                 : req.body.country_code,
+        name                         : req.body.name,
+        sport                        : req.body.sport,
+        updated_datetime             : req.body.updated_datetime,
+        updated_uid                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+    }, {new: true})
+    .then(sports => {
+        if(!sports) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send(sports);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating with id " + req.params.id
+        });
+    });
+    
+};
+
+// Delete a Data with the specified dataId in the request
+exports.delete = (req, res) => {
+          Sports.findByIdAndRemove(req.params.id)
+    .then(sports => {
+        if(!sports) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send({message: "Data deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Could not delete with id " + req.params.id
+        });
+    });
+};

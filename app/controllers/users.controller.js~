@@ -1,0 +1,148 @@
+
+const Users = require('../models/users.model.js');
+
+// Create and Save a new Data
+exports.create = (req, res) => {
+
+    // Create a Data
+    const users = new Users({
+        first_name                        : req.body.first_name, 
+        profile_image                     : req.body.profile_image,
+        is_signup_completed               : req.body.is_signup_completed,
+        parent_user_id                    : req.body.parent_user_id,
+        country_code                      : req.body.country_code,
+        date_of_birth                     : req.body.date_of_birth,
+        postal_code                       : req.body.postal_code,
+        suffix                            : req.body.suffix,        
+        city                              : req.body.city,
+        street1                           : req.body.street1,
+        organization_name                 : req.body.organization_name,
+        organization_id                   : req.body.organization_id,
+        user_id                           : req.body.user_id,
+        email_address                     : req.body.email_address,
+        password                          : req.body.password,
+        gender                            : req.body.gender,
+        country                           : req.body.country,
+        last_name                         : req.body.last_name,
+        is_invited                        : req.body.is_invited,
+        state                             : req.body.state,
+        mobile_phone                      : req.body.mobile_phone,
+        state_code                        : req.body.state_code,
+        street2                           : req.body.street2,
+        middle_initial                    : req.body.middle_initial,
+        organizations                     : req.body.organizations,
+        organization_abbrev               : req.body.organization_abbrev,        
+        created_uid                       : req.body.created_uid,
+        updated_uid                       : req.body.updated_uid,
+        created_datetime                  : req.body.created_datetime,
+        updated_datetime                  : req.body.updated_datetime
+    });
+
+    // Save Data in the database
+    users.save()
+    .then(data => {
+        res.send(data);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while creating the Data."
+        });
+    });
+    
+};
+
+// Retrieve and return all Data from the database.
+exports.findAll = (req, res) => {
+          
+        
+          Users.find()
+              .then(users => { 
+                  res.send(users);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
+// Find a single Data with a DataId
+exports.findOne = (req, res) => {
+          
+          Users.findById(req.params.id)
+    .then(users => {
+        if(!users) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });            
+        }
+        res.send(users);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error retrieving with id " + req.params.id
+        });
+    });
+    
+};
+
+// Update a Data identified by the DataId in the request
+exports.update = (req, res) => {
+
+    // Find Data and update it with the request body
+    Users.findByIdAndUpdate(req.params.id, {
+        tag_name                          : req.body.tag_name, 
+        sport_id                          : req.body.sport_id,
+        sport_name                        : req.body.sport_name,
+        organization_id                   : req.body.organization_id,
+        organization_name                 : req.body.organization_name,
+        organization_abbreviation         : req.body.organization_abbreviation,
+        is_deleted                        : req.body.is_deleted,
+        is_active                         : req.body.is_active,
+        tag_id                            : req.body.tag_id,
+        updated_uid                       : req.body.updated_uid,
+        updated_datetime                  : req.body.updated_datetime
+    }, {new: true})
+    .then(users => {
+        if(!users) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send(users);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating with id " + req.params.id
+        });
+    });
+    
+};
+
+// Delete a Data with the specified dataId in the request
+exports.delete = (req, res) => {
+          Users.findByIdAndRemove(req.params.id)
+    .then(users => {
+        if(!users) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send({message: "Data deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Could not delete with id " + req.params.id
+        });
+    });
+};

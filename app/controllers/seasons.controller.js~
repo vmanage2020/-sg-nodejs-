@@ -1,0 +1,204 @@
+
+const Seasons = require('../models/seasons.model.js');
+
+// Create and Save a new Data
+exports.create = (req, res) => {
+
+     //validation
+    if(!req.body.sports_id) {
+        return res.status(400).send({
+            message: "Sport Id can not be empty"
+        });
+    }
+    if(!req.body.sports_name) {
+        return res.status(400).send({
+            message: "Sports name can not be empty"
+        });
+    }
+    if(!req.body.season_start_date) {
+        return res.status(400).send({
+            message: "Start date can not be empty"
+        });
+    }
+    if(!req.body.season_end_date) {
+        return res.status(400).send({
+            message: "End date can not be empty"
+        });
+    }
+    if(!req.body.season) {
+        return res.status(400).send({
+            message: "Season can not be empty"
+        });
+    }
+    if(!req.body.organization_id) {
+        return res.status(400).send({
+            message: "Organization can not be empty"
+        });
+    }
+    if(!req.body.organization_abbreviation) {
+        return res.status(400).send({
+            message: "Abbreviation can not be empty"
+        });
+    }
+    if(!req.body.season_name) {
+        return res.status(400).send({
+            message: "Season name can not be empty"
+        });
+    }
+    if(!req.body.organization_name) {
+        return res.status(400).send({
+            message: "Organization name can not be empty"
+        });
+    }
+    // Create a Data
+    const seasons = new Seasons({
+        season_start_date                 : req.body.season_start_date, 
+        sports_id                         : req.body.sports_id,
+        season_end_date                   : req.body.season_end_date,
+        sports_name                       : req.body.sports_name,
+        season                            : req.body.season,
+        organization_id                   : req.body.organization_id,
+        season_id                         : req.body.season_id,
+        isUsed                            : req.body.isUsed,        
+        organization_abbreviation         : req.body.organization_abbreviation,
+        season_name                       : req.body.season_name,
+        organization_name                 : req.body.organization_name,
+        created_uid                       : req.body.created_uid,
+        updated_uid                       : req.body.updated_uid,
+        created_datetime                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+    });
+
+    // Save Data in the database
+    seasons.save()
+    .then(data => {
+    
+          if( data._id ){
+                  
+                  var json = {
+        season_start_date                 : req.body.season_start_date, 
+        sports_id                         : req.body.sports_id,
+        season_end_date                   : req.body.season_end_date,
+        sports_name                       : req.body.sports_name,
+        season                            : req.body.season,
+        organization_id                   : req.body.organization_id,
+        season_id                         : data._id,
+        isUsed                            : req.body.isUsed,        
+        organization_abbreviation         : req.body.organization_abbreviation,
+        season_name                       : req.body.season_name,
+        organization_name                 : req.body.organization_name,       
+        created_uid                       : req.body.created_uid,
+        updated_uid                       : req.body.updated_uid,
+        created_datetime                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+    };
+    
+                  Seasons.findByIdAndUpdate(data._id, json, {new: true}, function (err, place) {
+                      res.send(data);
+                    });
+  
+          }
+        //res.send(data);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while creating the Data."
+        });
+    });
+    
+};
+
+// Retrieve and return all Data from the database.
+exports.findAll = (req, res) => {
+          
+        
+          Seasons.find()
+              .then(seasons => { 
+                  res.send(seasons);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
+// Find a single Data with a DataId
+exports.findOne = (req, res) => {
+          
+          Seasons.findById(req.params.id)
+    .then(seasons => {
+        if(!seasons) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });            
+        }
+        res.send(seasons);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error retrieving with id " + req.params.id
+        });
+    });
+    
+};
+
+// Update a Data identified by the DataId in the request
+exports.update = (req, res) => {
+
+    // Find Data and update it with the request body
+    Seasons.findByIdAndUpdate(req.params.id, {
+        season_start_date                 : req.body.season_start_date, 
+        sports_id                         : req.body.sports_id,
+        season_end_date                   : req.body.season_end_date,
+        sports_name                       : req.body.sports_name,
+        season                            : req.body.season,
+        organization_id                   : req.body.organization_id,
+        isUsed                            : req.body.isUsed,        
+        organization_abbreviation         : req.body.organization_abbreviation,
+        season_name                       : req.body.season_name,
+        organization_name                 : req.body.organization_name,
+        updated_uid                       : req.body.updated_uid,
+        updated_datetime                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+    }, {new: true})
+    .then(seasons => {
+        if(!seasons) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send(seasons);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Error updating with id " + req.params.id
+        });
+    });
+    
+};
+
+// Delete a Data with the specified dataId in the request
+exports.delete = (req, res) => {
+          Seasons.findByIdAndRemove(req.params.id)
+    .then(seasons => {
+        if(!seasons) {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });
+        }
+        res.send({message: "Data deleted successfully!"});
+    }).catch(err => {
+        if(err.kind === 'ObjectId' || err.name === 'NotFound') {
+            return res.status(404).send({
+                message: "Data not found with id " + req.params.id
+            });                
+        }
+        return res.status(500).send({
+            message: "Could not delete with id " + req.params.id
+        });
+    });
+};
