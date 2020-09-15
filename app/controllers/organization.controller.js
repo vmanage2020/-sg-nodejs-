@@ -204,6 +204,38 @@ exports.findAll = (req, res) => {
               });
 };
 
+exports.findNationalGovAll = ( req, res) => {
+    var country = req.params.country;
+   
+    var sport   = new Array(req.params.sport);
+    //console.log('---country---', country, '---sport----', sport)
+    Organization.find({"country_code":country, "sports": {$in: sport} })
+    .then(organization => { 
+
+        res.send(organization);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while retrieving data."
+        });
+    });
+};
+
+exports.findStateGovAll = ( req, res) => {
+    var country = req.params.country;
+    var state = req.params.state;
+    var sport   = new Array(req.params.sport);
+    //console.log('---country---', country, '---sport----', sport)
+    Organization.find({"country_code":country, "state_code": state, "sports": {$in: sport} })
+    .then(organization => { 
+
+        res.send(organization);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while retrieving data."
+        });
+    });
+};
+
 exports.findorganizationsportsAll = ( req, res) => {
 
     var orgId = req.params.id;
