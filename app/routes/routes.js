@@ -16,6 +16,9 @@ module.exports = (app) => {
     const seasons             = require('../controllers/seasons.controller.js');
     const organization        = require('../controllers/organization.controller.js');
 
+    const feeds               = require('../controllers/feeds.controller.js');
+    const feedcomments        = require('../controllers/feedcomments.controller.js');
+
     const importuserslog      = require('../controllers/importuserslog.controller.js');
 
     // Country
@@ -158,12 +161,20 @@ module.exports = (app) => {
 
     app.get('/organizationsports/:id', organization.findorganizationsportsAll);
     
-    //app.get('/organizationsportbyid/:id', organization.findOne1);   
-    //app.get('/organizationbysport/:id', organization.findbyOrgAll1);
+    app.get('/organizationnationalgoverningbyid/:country/:sport', organization.findNationalGovAll);   
+    app.get('/organizationstategoverningbyid/:country/:state/:sport', organization.findStateGovAll);
 
     //Feed
+    app.post('/feeds', feeds.create);    
+    app.get('/feeds', feeds.findAll);    
+    app.get('/feeds/:id', feeds.findOne);   
+    app.put('/feeds/:id', feeds.update);    
+    app.delete('/feeds/:id', feeds.delete); 
 
     //Feedcomment
+    app.post('/feedcomments', feedcomments.create);
+    app.get('/feedcomments/:id', feedcomments.findbyFeedAll);
+    app.delete('/feedcomments/:id', feedcomments.delete);
 
     //Import user logs
     app.post('/importuserlogs', importuserslog.create);   

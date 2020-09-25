@@ -1,9 +1,48 @@
 
 const Importuserslog = require('../models/importuserslog.model.js');
 
+const Users = require('../models/users.model.js');
+
+const csvparser = require('csv-parser');
+
+const parse = require( 'csv-parse/lib/sync' );
+const axios = require( 'axios' );
+
+
 const logger = require('../../config/logger')
 var cname = 'Import User logs';
 var ObjectID = require('mongodb').ObjectID;
+
+
+const readCSV = ( module.exports.readCSV = async ( path ) => {
+    try {
+       const res = await axios( { url: path, method: 'GET', responseType: 'blob' } );
+       let records = parse( res.data, {
+          columns: true,
+          skip_empty_lines: true
+        } );
+        
+        return records;
+     } catch ( e ) {
+       console.log( 'err' );
+     }
+    
+    } );
+
+function getValidEmail(email)
+{
+    var inputjson = {email_address: email}
+    return Users.find(inputjson).then(function(result){
+        console.log('----result----', result)
+        //return result !== null;
+        if( result.length==0)
+        {
+           return true
+        }else{
+            return result;
+        }
+   });
+}
 
 function checkAlreadyExists(id,sportId,seasonname, orgId)
     {
@@ -154,6 +193,125 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                             }
                             
                             Importuserslog.findByIdAndUpdate(data._id, json, {new: true}, function (err, place) {
+
+                                var csvFilePaths = req.body.imported_file_url;//'https://firebasestorage.googleapis.com/v0/b/sportsgravy-testing.appspot.com/o/Z1wiLsm7q22taU6KNCOo_1600251030051_standard_user_import_template.csv?alt=media&token=ac5ec6cd-7034-4ba7-9931-69fe8da129e2';
+    
+    
+                                            readCSV(csvFilePaths).then( data => {
+                    
+                                                data.forEach( da => {
+                                                    console.log('----da----', da)
+                                        
+                                                    var quardUserId = [];            
+                                                    var atheleteUserId = '';
+                                        
+                                                    if( da.guardian_2_first_name != undefined && da.guardian_2_first_name != ''
+                                                        && da.guardian_2_last_name != undefined && da.guardian_2_last_name != '' 
+                                                        && da.guardian_2_email_1 != undefined && da.guardian_2_email_1 !=  '')
+                                                    {
+                                                        getValidEmail(da.guardian_2_email_1).then( quard2data =>  {
+                                                            if( quard2data != true)
+                                                            {
+                                                                //console.log('----quard2data---', quard2data)
+                                                                quardUserId.push( new ObjectID(quard2data[0]._id) );
+                                                            }else{
+                                                                var quard2insertJson = new Users({
+                                                                    first_name                        : da.guardian_2_first_name, 
+                                                                    last_name                         : da.guardian_2_last_name,
+                                                                    mobile_phone                      : da.guardian_2_phone_1,
+                                                                    email_address                     : da.guardian_2_email_1
+                                                                })
+                                                                //console.log('---quard2insertJson----', quard2insertJson)
+                                                                quard2insertJson.save()
+                                                                .then(quard2 => {
+                                                                    quardUserId.push( new ObjectID(quard2._id) );
+                                                                }).catch(err => {
+                                                                    res.status(500).send({
+                                                                        message: err.message || "Some error occurred while creating the Data."
+                                                                    });
+                                                                });
+                                                            }
+                                        
+                                                        })
+                                                    }
+                                                    if( da.guardian_1_first_name != undefined && da.guardian_1_first_name != ''
+                                                    && da.guardian_1_last_name != undefined && da.guardian_1_last_name != '' 
+                                                    && da.guardian_1_email_1 != undefined && da.guardian_1_email_1 !=  '')
+                                                    {
+                                                        getValidEmail(da.guardian_1_email_1).then( quard1data =>  {
+                                                            if( quard1data != true)
+                                                            {
+                                                                //console.log('----quard1data---', quard1data)
+                                                                quardUserId.push( new ObjectID(quard1data[0]._id) );
+                                                            }else{
+                                                                var quard1insertJson = new Users({
+                                                                    first_name                        : da.guardian_1_first_name, 
+                                                                    last_name                         : da.guardian_1_last_name,
+                                                                    mobile_phone                      : da.guardian_1_phone_1,
+                                                                    email_address                     : da.guardian_1_email_1
+                                                                })
+                                                                //console.log('---quard1insertJson----', quard1insertJson)
+                                                                quard1insertJson.save()
+                                                                .then(quard1 => {
+                                                                    quardUserId.push( new ObjectID(quard1._id) );
+                                                                }).catch(err => {
+                                                                    res.status(500).send({
+                                                                        message: err.message || "Some error occurred while creating the Data."
+                                                                    });
+                                                                });
+                                                            }
+                                                        })
+                                                    }
+                                                    setTimeout(() => {
+                                                    
+                                                        if( da.athlete_1_first_name != undefined && da.athlete_1_first_name != ''
+                                                        && da.athlete_1_last_name != undefined && da.athlete_1_last_name != '' 
+                                                        &&  da.athlete_1_email != undefined && da.athlete_1_email !=  '' && quardUserId.length>0)
+                                                        {
+                                                            
+                                                            getValidEmail(da.athlete_1_email).then( atheletdata =>  {
+                                                                if( atheletdata == true)
+                                                                {
+                                                                    console.log('---quardUserId----', quardUserId)
+                                                                        var atheleteinsertJson = new Users({
+                                                                            parent_user_id                    : quardUserId,
+                                                                            first_name                        : da.athlete_1_first_name, 
+                                                                            last_name                         : da.athlete_1_last_name,
+                                                                            middle_initial                    : da.athlete_1_middle_name,
+                                                                            email_address                     : da.athlete_1_email,
+                                                                            date_of_birth                     : new Date(da.athlete_1_dob),
+                                                                            gender                            : da.athlete_1_gender,
+                                                                            street1                           : da.athlete_1_address_1,
+                                                                            street2                           : da.athlete_1_address_1_cont,
+                                                                            city                              : da.athlete_1_city_1,
+                                                                            state                             : da.athlete_1_state_1,
+                                                                            postal_code                       : da.athlete_1_zip_1,
+                                                                            country_code                      : da.athlete_1_country_1
+                                                                        })
+                                                                        console.log('---atheleteinsertJson----', atheleteinsertJson)
+                                                                        atheleteinsertJson.save()
+                                                                                .then(athelete => {
+                                                                                    //console.log('-----athelete----', athelete)
+                                                                                    atheleteUserId = athelete._id
+                                                                                }).catch(err => {
+                                                                                    res.status(500).send({
+                                                                                        message: err.message || "Some error occurred while creating the Data."
+                                                                                    });
+                                                                                });
+                                                                }
+                                                            })
+                                                            
+                                                        } 
+                                                    }, 2000);
+                                                    
+                                                })
+
+
+                                                /*
+                                                 
+                                                */
+                                            })
+
                                     if(logger.exitOnError == true){
                                     logger.log('info',`${cname} - create API Service response`)
                                     }
@@ -171,6 +329,8 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
 
 
 };
+
+
 
 exports.findbyOrgAll = (req, res) => {
     

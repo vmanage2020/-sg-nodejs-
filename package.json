@@ -16,10 +16,12 @@
   "author": "callicoder",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.20.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "csv": "^5.3.2",
+    "csv-parser": "^2.3.3",
     "express": "^4.16.4",
-    "fs": "0.0.1-security",
     "mongoose": "^5.4.7",
     "winston": "^3.3.3"
   }

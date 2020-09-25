@@ -1,0 +1,1015 @@
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-03T15:13:11.320Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-03T15:13:11.639Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-03T15:19:35.120Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-03T15:19:35.464Z"}
+{"level":"info","message":"Levels - List All API Service Request","timestamp":"2020-09-03T16:15:21.951Z"}
+{"level":"info","message":"Levels - List All API Service Response","timestamp":"2020-09-03T16:15:22.324Z"}
+{"level":"info","message":"Tags - List All API Service Request","timestamp":"2020-09-03T16:20:39.795Z"}
+{"level":"info","message":"Tags - List All API Service Response","timestamp":"2020-09-03T16:20:40.095Z"}
+{"level":"info","message":"Canned Response - List All API Service Request","timestamp":"2020-09-03T16:25:30.497Z"}
+{"level":"info","message":"Canned Response - List All API Service Response","timestamp":"2020-09-03T16:25:30.790Z"}
+{"level":"info","message":"Player metadata - List All API Service Request","timestamp":"2020-09-03T16:30:44.883Z"}
+{"level":"info","message":"Player metadata - List All API Service Response","timestamp":"2020-09-03T16:30:45.131Z"}
+{"level":"info","message":"Manager Customfields - List All API Service Request","timestamp":"2020-09-03T16:36:32.454Z"}
+{"level":"info","message":"Manager Customfields - List All API Service Response","timestamp":"2020-09-03T16:36:32.716Z"}
+{"level":"info","message":"Coach Customfields - List All API Service Request","timestamp":"2020-09-03T16:40:11.865Z"}
+{"level":"info","message":"Coach Customfields - List All API Service Response","timestamp":"2020-09-03T16:40:12.168Z"}
+{"level":"info","message":"Seasons - List All API Service Request","timestamp":"2020-09-03T16:43:48.357Z"}
+{"level":"info","message":"Seasons - List All API Service Response","timestamp":"2020-09-03T16:43:48.600Z"}
+{"level":"info","message":"Seasons - List All API Service Request","timestamp":"2020-09-03T16:50:38.517Z"}
+{"level":"info","message":"Seasons - List All API Service Response","timestamp":"2020-09-03T16:50:38.808Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-08T16:37:52.879Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-08T16:37:53.197Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-08T18:47:24.489Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-08T18:47:24.855Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-09T05:03:47.466Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-09T05:03:47.779Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Request","timestamp":"2020-09-09T05:04:15.959Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Response","timestamp":"2020-09-09T05:04:16.248Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Request","timestamp":"2020-09-09T05:04:17.953Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Response","timestamp":"2020-09-09T05:04:18.289Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Request","timestamp":"2020-09-09T05:05:56.954Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Response","timestamp":"2020-09-09T05:05:57.440Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Request","timestamp":"2020-09-09T05:50:52.215Z"}
+{"level":"info","message":"Import User logs - List All by Organization Id API Service Response","timestamp":"2020-09-09T05:50:52.575Z"}
+{"level":"info","message":"Import User logs - create API service Request enter","timestamp":"2020-09-09T06:27:16.216Z"}
+{"level":"info","message":"Import User logs - create API service Request enter","timestamp":"2020-09-09T06:28:07.611Z"}
+{"level":"info","message":"Import User logs - create DB request","timestamp":"2020-09-09T06:28:15.202Z"}
+{"level":"info","message":"Import User logs - create API service Request enter","timestamp":"2020-09-09T06:29:04.279Z"}
+{"level":"info","message":"Import User logs - create DB request","timestamp":"2020-09-09T06:29:04.665Z"}
+{"level":"info","message":"Import User logs - create API service Request enter","timestamp":"2020-09-09T06:29:31.679Z"}
+{"level":"info","message":"Import User logs - create DB request","timestamp":"2020-09-09T06:29:32.002Z"}
+{"level":"info","message":"Import User logs - create API service Request enter","timestamp":"2020-09-09T06:29:43.365Z"}
+{"level":"info","message":"Import User logs - create DB request","timestamp":"2020-09-09T06:29:43.674Z"}
+{"level":"info","message":"Import User logs - create API service Request enter","timestamp":"2020-09-09T06:29:56.339Z"}
+{"level":"info","message":"Import User logs - create DB request","timestamp":"2020-09-09T06:29:56.679Z"}
+{"level":"info","message":"Import User logs - create DB response","timestamp":"2020-09-09T06:29:56.988Z"}
+{"level":"info","message":"Import User logs - create API Service response","timestamp":"2020-09-09T06:29:57.304Z"}
+{"level":"info","message":"Seasons - List All by Sports Id API Service Request","timestamp":"2020-09-09T09:24:33.041Z"}
+{"level":"info","message":"Seasons - List All by Sports Id API Service Response","timestamp":"2020-09-09T09:24:33.692Z"}
+{"level":"info","message":"Seasons - List All by Sports Id API Service Request","timestamp":"2020-09-09T09:24:47.401Z"}
+{"level":"info","message":"Seasons - List All by Sports Id API Service Response","timestamp":"2020-09-09T09:24:47.997Z"}
+{"level":"info","message":"Import User logs - Get by Id API service Request","timestamp":"2020-09-10T12:08:56.623Z"}
+{"level":"info","message":"Import User logs - Get by Id API service Response","timestamp":"2020-09-10T12:08:57.131Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:03.559Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:03.576Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:03.580Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:03.583Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:06.726Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:07.449Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.465Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.469Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:07.519Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:07.536Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:07.538Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:14:07.540Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:07.542Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:07.544Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.941Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.942Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.945Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:14:07.973Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.978Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:07.987Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:07.992Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:08.584Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:08.638Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:08.991Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:09.005Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:09.418Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:09.438Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:09.658Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:09.792Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:09.967Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.126Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:16.130Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.134Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.156Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.454Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.469Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.476Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.478Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.483Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.512Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:16.522Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:14:16.526Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.532Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.765Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.765Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:14:16.771Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.782Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:16.786Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:14:16.848Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:16.850Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:14:17.069Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:17.138Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:17.145Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:17.537Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:17.541Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:18.201Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:18.206Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:18.811Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:18.819Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:19.426Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:14:19.432Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:14:20.181Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:14:47.492Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:14:47.880Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.029Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:49.041Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.044Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.055Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:49.449Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.466Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.469Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.480Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.499Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.505Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.507Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:16:49.508Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.510Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:16:49.722Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.810Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.812Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.814Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.817Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:49.818Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:16:49.835Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:16:49.998Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:50.131Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:50.161Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:50.456Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:50.460Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:51.172Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:51.175Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:51.500Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:51.507Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:51.842Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:16:51.876Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:16:52.202Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:17:29.765Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:17:30.287Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:40.394Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:40.404Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:40.409Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:40.423Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:40.819Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:40.828Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:40.861Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:40.865Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:40.874Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:40.876Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:40.880Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:19:40.885Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:41.022Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:41.430Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:41.432Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:41.433Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:41.434Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:19:41.441Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:19:41.453Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:41.457Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:19:41.859Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:41.958Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:41.991Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:42.672Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:42.687Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:43.292Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:43.297Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:43.707Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:43.716Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:44.125Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:19:44.144Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:19:44.551Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:48.750Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:48.807Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:48.808Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:48.819Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.084Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.087Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:49.103Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.116Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:49.149Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:49.184Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:49.185Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:20:49.187Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:49.190Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:49.391Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.407Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.489Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.490Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:20:49.500Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.513Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:49.522Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:49.766Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:49.848Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:49.885Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:49.926Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:49.935Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:49.945Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:50.587Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:50.605Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:50.622Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:50.629Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.152Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:55.159Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.160Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.172Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:55.557Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.575Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.586Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.593Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.614Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.617Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.619Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:20:55.620Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.621Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.894Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.895Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.904Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:20:55.904Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:55.908Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:20:55.917Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:55.929Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:20:56.572Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:56.597Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:56.612Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:57.223Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:57.229Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:57.554Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:57.560Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:58.173Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:58.188Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:58.782Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:20:58.794Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:20:59.391Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:17.725Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:17.748Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:17.749Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:17.751Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.121Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.124Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:18.160Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.168Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:18.183Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:18.190Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:18.192Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:21:18.197Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:18.198Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.580Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.586Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.587Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:21:18.591Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:18.594Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:18.596Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:18.599Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:19.051Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:19.078Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:19.103Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:19.418Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:19.425Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:19.873Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:19.877Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:20.291Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:20.320Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:20.896Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:20.899Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:21.509Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:29.897Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:29.908Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:29.909Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:29.920Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.399Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.422Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.428Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:30.447Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:30.450Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:30.452Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:30.453Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:21:30.454Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:30.456Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.757Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.760Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:21:30.760Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.766Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:21:30.769Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:30.779Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:30.816Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:21:31.032Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:31.140Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:31.147Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:31.547Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:31.552Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:31.851Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:31.856Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:32.367Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:32.377Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:32.897Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:21:32.900Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:21:33.309Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:21:53.792Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:21:54.427Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:24.932Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:24.940Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:24.944Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:24.960Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.272Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:25.289Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.293Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.295Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:25.308Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:25.310Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:25.316Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:23:25.317Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:25.321Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.601Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.611Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.613Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:23:25.616Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.618Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:23:25.618Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:25.631Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:23:25.926Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:25.966Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:25.979Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:26.288Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:26.291Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:26.663Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:26.673Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:27.038Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:27.047Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:27.672Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:23:27.684Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:23:28.283Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:23:46.959Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:23:47.331Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:25:11.564Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:25:11.928Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.420Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:18.427Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.428Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.452Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:18.752Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:18.775Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:18.785Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:18.797Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.871Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.874Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.888Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:28:18.890Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:18.893Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:19.300Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:19.305Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:28:19.318Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:19.328Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:19.330Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:28:19.333Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:19.336Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:28:19.625Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:19.653Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:19.672Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:20.167Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:20.180Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:20.826Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:20.835Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:21.355Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:21.359Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:21.975Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:28:21.979Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:28:22.758Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:28:24.131Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:28:24.533Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:57.822Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:29:57.828Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:57.832Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:57.854Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.168Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:29:58.200Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.203Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.206Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:58.210Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:58.217Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:58.224Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:29:58.225Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:58.229Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.509Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.519Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.529Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:29:58.554Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:58.595Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:29:58.597Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:29:58.605Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:29:59.047Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:29:59.086Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:29:59.097Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:29:59.471Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:29:59.480Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:29:59.897Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:29:59.907Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:30:00.286Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:30:00.290Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:30:00.887Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:30:00.891Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:30:01.347Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:30:03.773Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:30:04.159Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:30.157Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:30.166Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:30.177Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:30.210Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:30.483Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:30.487Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:30.544Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:30.556Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:30.559Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:30.563Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:30.837Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:30.896Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.508Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:35.521Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.522Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.523Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:35.845Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:35.857Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:35.871Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:35.903Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.921Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.923Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.931Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:31:35.940Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:35.946Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:31:36.183Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:36.229Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:31:36.252Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:36.257Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:36.259Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:36.260Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:36.284Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:31:36.505Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:36.609Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:36.622Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:36.975Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:36.985Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:37.584Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:37.600Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:38.285Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:38.300Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:38.779Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:31:38.784Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:31:39.111Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:31:43.307Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:31:43.897Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:31:57.833Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:31:58.451Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:40.615Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:40.635Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:40.645Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:40.647Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.030Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.055Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:41.066Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.070Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:41.073Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:41.074Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:41.076Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:33:41.077Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:41.227Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.637Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:33:41.644Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.647Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.650Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:41.652Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:33:41.658Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:41.670Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:33:42.054Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:42.074Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:42.078Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:42.499Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:42.519Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:43.320Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:43.330Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:43.911Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:43.922Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:44.342Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:33:44.360Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:33:44.949Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:37.614Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:37.633Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:37.634Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:37.636Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:37.961Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:37.978Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:37.989Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:38.027Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.043Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.048Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:38.051Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:34:38.052Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:38.054Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:34:38.263Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.267Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.321Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:34:38.332Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.334Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.334Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:38.335Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:34:38.601Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:38.648Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:38.674Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:39.034Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:39.048Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:39.426Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:39.433Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:39.982Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:39.990Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:40.651Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:34:40.662Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:34:41.264Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.545Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:26.561Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.562Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.566Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:26.847Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:26.868Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:26.871Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:26.881Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.888Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.892Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.894Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:35:26.895Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:26.896Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:35:27.161Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:27.180Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:27.183Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:35:27.188Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:27.190Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:27.190Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:27.191Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:35:27.467Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:27.503Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:27.556Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:27.962Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:27.966Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:28.581Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:28.591Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:28.988Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:28.999Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:29.399Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:35:29.405Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:35:29.754Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:06.905Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:06.914Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:06.923Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:06.949Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.279Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:07.286Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.304Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.362Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:07.369Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:07.376Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:07.421Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:36:07.422Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:07.424Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.662Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.664Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:36:07.671Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.722Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:36:07.727Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:07.732Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:07.733Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:36:08.286Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:08.350Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:08.373Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:08.699Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:08.707Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:09.142Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:09.167Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:09.534Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:09.538Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:10.148Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:36:10.153Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:36:10.777Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:12.637Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:12.656Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:12.662Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:12.665Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:12.984Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.000Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.003Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:13.033Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:13.035Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:13.040Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:13.041Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:39:13.044Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:13.046Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.385Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.390Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.392Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.392Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:39:13.394Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:13.406Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:13.422Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:13.801Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:13.823Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:13.843Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:14.443Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:14.461Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:14.864Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:14.878Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:15.235Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:15.243Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:15.925Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:15.940Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:16.433Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.166Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:23.178Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.182Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.190Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:23.600Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:23.637Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:23.656Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:23.686Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.691Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.694Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.698Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:39:23.710Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:23.714Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:24.144Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:24.147Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:24.150Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:39:24.164Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:24.168Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:39:24.176Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:24.192Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:39:24.468Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:24.718Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:24.731Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:25.359Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:25.374Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:25.736Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:25.739Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:26.163Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:26.169Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:26.763Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:39:26.768Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:39:27.077Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:37.439Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:37.445Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:37.458Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:37.471Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:39.775Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:39.794Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:39.806Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:39.826Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:39.831Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:39.832Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:39.833Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:45:39.834Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:39.836Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:40.380Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:40.384Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:45:40.400Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:40.403Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:40.405Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:45:40.406Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:40.417Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:45:41.001Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:41.023Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:41.075Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:41.640Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:41.654Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:42.041Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:42.054Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:42.658Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:42.672Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:43.069Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:45:43.076Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:45:43.481Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:09.914Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:09.922Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:09.923Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:09.928Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.263Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:10.281Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.291Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.295Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:10.313Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:10.314Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:10.317Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:46:10.319Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:10.322Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.629Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.635Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.639Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:46:10.653Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:10.669Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:46:10.672Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:10.680Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:46:11.037Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:11.063Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:11.089Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:11.448Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:11.454Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:12.072Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:12.087Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:12.693Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:12.709Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:13.402Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:46:13.420Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:46:14.007Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.111Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:07.134Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.137Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.138Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.404Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:07.422Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.429Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.434Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.449Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.451Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.453Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:47:07.455Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.457Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.740Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.746Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.748Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:07.749Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:07.751Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:47:07.758Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:07.771Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:08.042Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:08.083Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:08.123Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:08.412Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:08.419Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:08.798Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:08.807Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:09.211Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:09.219Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:09.811Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:09.819Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:10.392Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:30.732Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:30.736Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:30.758Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:30.767Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.021Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:31.030Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.040Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.044Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:31.046Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:31.054Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:31.067Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:47:31.072Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:31.073Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.322Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:47:31.322Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.330Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.342Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:31.348Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:47:31.356Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.367Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:47:31.604Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:31.635Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:31.642Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:31.960Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:31.963Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:32.364Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:32.372Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:32.756Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:32.758Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:33.385Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:47:33.394Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:47:33.844Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.185Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:02.193Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.217Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.221Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.531Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.533Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:02.539Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.544Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.561Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.562Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.563Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:48:02.564Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.565Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.982Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.983Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:48:02.985Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.987Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:02.987Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:02.990Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:02.998Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:03.478Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:03.507Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:03.539Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:04.076Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:04.104Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:04.682Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:04.691Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:05.094Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:05.107Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:05.748Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:05.766Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:06.076Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:31.533Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:31.538Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:31.550Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:31.559Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:31.840Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:31.853Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:31.856Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:31.862Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:31.875Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:31.878Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:48:31.884Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:32.313Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:32.324Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:32.326Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:48:32.328Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:32.336Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:32.340Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:32.343Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:32.346Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:32.975Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:32.980Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:33.005Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:33.081Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:33.483Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:33.494Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:34.118Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:34.122Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:34.688Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:34.695Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:35.108Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:35.123Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:35.840Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:57.820Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:57.846Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:57.847Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:57.854Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:58.179Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.183Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.186Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:58.190Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:58.192Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:58.193Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.195Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:48:58.198Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:58.272Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.617Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:48:58.621Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.623Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.623Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:48:58.628Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.630Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:58.634Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:48:58.911Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:58.935Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:58.966Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:59.395Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:59.405Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:48:59.811Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:48:59.824Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:00.117Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:00.119Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:00.409Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:00.411Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:00.704Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:22.730Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:22.742Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:22.748Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:22.759Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.051Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:23.061Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.066Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.113Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:23.117Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:23.119Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:23.122Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:49:23.123Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:23.141Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.419Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.420Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.420Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.424Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:49:23.428Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:23.431Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:23.435Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:23.723Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:23.772Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:23.796Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:24.314Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:24.324Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:24.715Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:24.723Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:25.404Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:25.412Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:25.945Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:25.948Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:26.427Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.466Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:53.483Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.484Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.486Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:53.914Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:53.921Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:53.923Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:53.940Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.960Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.961Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.962Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:49:53.963Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:53.965Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:54.405Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:54.408Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:54.413Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:49:54.418Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:54.428Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:49:54.437Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:54.442Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:49:54.745Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:55.144Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:55.156Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:55.505Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:55.516Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:55.893Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:55.903Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:56.538Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:56.547Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:56.851Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:49:56.860Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:49:57.264Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:38.867Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:38.883Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:38.893Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:38.902Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.163Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:39.179Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.183Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.195Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:39.222Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:39.223Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:39.225Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:50:39.226Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:39.228Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.541Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:50:39.551Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.559Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.568Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.574Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:39.579Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:39.586Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:39.963Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:40.013Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:40.050Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:40.377Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:40.389Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:40.768Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:40.781Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:41.180Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:41.186Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:41.875Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:41.886Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:42.198Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.359Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:49.364Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.369Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.377Z"}
+{"level":"info","message":"Coach Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:49.714Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:49.720Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.721Z"}
+{"level":"info","message":"Manage Customfields - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:49.723Z"}
+{"level":"info","message":"Player metadata - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:49.727Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.732Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.733Z"}
+{"level":"info","message":"Position - List All API Service Request","timestamp":"2020-09-10T17:50:49.734Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:49.735Z"}
+{"level":"info","message":"Canned Response - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:50.183Z"}
+{"level":"info","message":"Tags - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:50.187Z"}
+{"level":"info","message":"Position - List All API Service Response","timestamp":"2020-09-10T17:50:50.195Z"}
+{"level":"info","message":"Seasons - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:50.204Z"}
+{"level":"info","message":"Levels - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:50.205Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Request","timestamp":"2020-09-10T17:50:50.206Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:50.211Z"}
+{"level":"info","message":"Users - List All by Organization Id API Service Response","timestamp":"2020-09-10T17:50:50.586Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:50.598Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:50.616Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:51.021Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:51.036Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:51.425Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:51.437Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:52.026Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:52.031Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:52.445Z"}
+{"level":"info","message":"Sports - List All API Service Request","timestamp":"2020-09-10T17:50:52.456Z"}
+{"level":"info","message":"Sports - List All API Service Response","timestamp":"2020-09-10T17:50:52.998Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-10T17:51:03.299Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-10T17:51:03.745Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-12T11:08:19.918Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-12T11:08:20.262Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-12T11:08:25.689Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-12T11:08:25.922Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Request","timestamp":"2020-09-12T11:08:30.915Z"}
+{"level":"info","message":"Sports - List All Sports by country API Service Response","timestamp":"2020-09-12T11:08:31.172Z"}
