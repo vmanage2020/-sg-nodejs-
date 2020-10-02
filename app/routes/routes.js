@@ -12,9 +12,7 @@ module.exports = (app) => {
     const playermetadata      = require('../controllers/playermetadata.controller.js');
     
     const users               = require('../controllers/users.controller.js');
-   
     const teams               = require('../controllers/teams.controller.js');
-   
     const seasons             = require('../controllers/seasons.controller.js');
     const organization        = require('../controllers/organization.controller.js');
 
@@ -132,7 +130,6 @@ module.exports = (app) => {
     app.delete('/users/:id', users.delete);
 
     app.get('/usersbyorg/:id', users.findbyOrgAll);   
-   
     
     // Teams
     app.post('/teams', teams.create);    
@@ -140,7 +137,6 @@ module.exports = (app) => {
     app.get('/teams/:id', teams.findOne);   
     app.put('/teams/:id', teams.update);    
     app.delete('/teams/:id', teams.delete);
-    
     
     // Seasons
     app.post('/seasons', seasons.create);    
@@ -184,5 +180,8 @@ module.exports = (app) => {
     app.post('/importuserlogs', importuserslog.create);   
     app.get('/importuserlogsdbyorg/:id', importuserslog.findbyOrgAll);  
     app.get('/importuserlogs/:id', importuserslog.findOne);
+    app.get('/importuserdata/:id', importuserslog.findbylogAll);
+    app.get('/importuserdatabyid/:id', importuserslog.findbyid);
+    app.put('/importuserdata/:id', importuserslog.updateimportuserdata);  
     
 }

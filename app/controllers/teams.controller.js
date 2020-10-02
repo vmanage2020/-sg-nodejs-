@@ -4,7 +4,6 @@ const Teams = require('../models/teams.model.js');
 // Create and Save a new Data
 exports.create = (req, res) => {
 
-    
     // Create a Data
     const teams = new Teams({
         is_completed                      : req.body.is_completed, 
@@ -32,8 +31,6 @@ exports.create = (req, res) => {
         updated_datetime                  : req.body.updated_datetime
     });
 
-
-    
     // Save Data in the database
     teams.save()
     .then(data => {
@@ -46,9 +43,9 @@ exports.create = (req, res) => {
     
 };
 
-
 // Retrieve and return all Data from the database.
 exports.findAll = (req, res) => {
+          
         
           Teams.find()
               .then(teams => { 
@@ -62,7 +59,7 @@ exports.findAll = (req, res) => {
 
 // Find a single Data with a DataId
 exports.findOne = (req, res) => {
-         
+          
           Teams.findById(req.params.id)
     .then(teams => {
         if(!teams) {
@@ -130,7 +127,6 @@ exports.update = (req, res) => {
     });
     
 };
-
 
 // Delete a Data with the specified dataId in the request
 exports.delete = (req, res) => {
