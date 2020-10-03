@@ -37,6 +37,30 @@ exports.findAll = (req, res) => {
 };
 
 // Find a single Data with a DataId
+exports.findbyrole = (req, res) => {
+          
+    Roles.find({role_id: req.params.id})
+.then(roles => {
+  if(!roles) {
+      return res.status(404).send({
+          message: "Data not found with id " + req.params.id
+      });            
+  }
+  res.send(roles);
+}).catch(err => {
+  if(err.kind === 'ObjectId') {
+      return res.status(404).send({
+          message: "Data not found with id " + req.params.id
+      });                
+  }
+  return res.status(500).send({
+      message: "Error retrieving with id " + req.params.id
+  });
+});
+
+};
+
+// Find a single Data with a DataId
 exports.findOne = (req, res) => {
           
           Roles.findById(req.params.id)

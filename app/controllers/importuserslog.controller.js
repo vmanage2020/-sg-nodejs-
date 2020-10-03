@@ -3,6 +3,8 @@ const Importuserslog = require('../models/importuserslog.model.js');
 
 const Users = require('../models/users.model.js');
 
+const Roles = require('../models/roles.model.js');
+
 const Levels = require('../models/levels.model.js');
 
 const Importusersdata = require('../models/importusersdata.model.js');
@@ -153,6 +155,22 @@ function checkAlreadyExists(id,sportId,seasonname, orgId)
            });
     }
 
+
+    function getRolesbyname( rolename )
+    {
+        var inputjson = {role_id: rolename }
+        return Roles.find(inputjson).then(function(result){
+            //console.log('----result----', result)
+            //return result !== null;
+            if( result.length==0)
+            {
+               return true
+            }else{
+                return result;
+            }
+       });
+    }
+
 function updateImportsLogs(id, json)
 {
     Importuserslog.findByIdAndUpdate(id, json, {new: true})
@@ -198,6 +216,18 @@ function updateImportsData(id, json)
 
 // Create and Save a new Data
 exports.create = (req, res) => {
+
+
+    var playerRoles = [];
+    var guardianRoles = [];
+   getRolesbyname('player').then( roles => {
+    playerRoles = roles;
+   })
+   getRolesbyname('guardian').then( groles => {
+    guardianRoles = groles;
+   })
+
+
 
     if(logger.exitOnError == true){
     logger.log('info',`${cname} - create API service Request enter`)
@@ -267,7 +297,7 @@ const importuserslog = new Importuserslog({
 });
 
 
-checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organization_id).then( valid =>  {
+/* checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organization_id).then( valid =>  {
 
     if( valid == false)
     {
@@ -278,7 +308,7 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
             status: 400,
             message: "Already Inserted same data. please check it"
         });
-    }else{
+    }else{ */
 
             if(logger.exitOnError == true){
             logger.log('info',`${cname} - create DB request`)
@@ -368,10 +398,34 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                                                                     quardUserId.push( new ObjectID(quard2data[0]._id) );
                                                                 }else{
                                                                     var quard2insertJson = new Users({
-                                                                        first_name                        : da.guardian_2_first_name, 
-                                                                        last_name                         : da.guardian_2_last_name,
-                                                                        mobile_phone                      : da.guardian_2_phone_1,
-                                                                        email_address                     : da.guardian_2_email_1
+                                                                                        user_id: '',
+                                                                                        first_name: da.guardian_2_first_name || "",
+                                                                                        middle_initial: '',
+                                                                                        last_name: da.guardian_2_last_name || "",
+                                                                                        suffix:  '',
+                                                                                        gender: '',
+                                                                                        date_of_birth:  "",
+                                                                                        email_address: da.guardian_2_email_1 || "",
+                                                                                        mobile_phone:  da.guardian_2_phone_1 | "",
+                                                                                        parent_user_id: [],
+                                                                                        city: "",
+                                                                                        country_code:  "",
+                                                                                        country: "",
+                                                                                        postal_code:  "",
+                                                                                        state:  "",
+                                                                                        state_code:  "",
+                                                                                        street1:  "",
+                                                                                        street2:  "",
+                                                                                        organization_id:  req.body.organization_id || "",
+                                                                                        organization_name:  "",
+                                                                                        organization_abbrev:  "",
+                                                                                        created_datetime: new Date() || "",
+                                                                                        created_uid:  "",
+                                                                                        is_invited: false,
+                                                                                        is_signup_completed: false,
+                                                                                        profile_image: '',
+                                                                                        roles: guardianRoles,
+                                                                                        organizations: [req.body.organization_id]
                                                                     })
                                                                     //console.log('---quard2insertJson----', quard2insertJson)
                                                                     quard2insertJson.save()
@@ -400,10 +454,34 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                                                                     quardUserId.push( new ObjectID(quard1data[0]._id) );
                                                                 }else{
                                                                     var quard1insertJson = new Users({
-                                                                        first_name                        : da.guardian_1_first_name, 
-                                                                        last_name                         : da.guardian_1_last_name,
-                                                                        mobile_phone                      : da.guardian_1_phone_1,
-                                                                        email_address                     : da.guardian_1_email_1
+                                                                                            user_id: '',
+                                                                                            first_name: da.guardian_1_first_name || "",
+                                                                                            middle_initial: '',
+                                                                                            last_name: da.guardian_1_last_name || "",
+                                                                                            suffix:  '',
+                                                                                            gender: '',
+                                                                                            date_of_birth:  "",
+                                                                                            email_address: da.guardian_1_email_1 || "",
+                                                                                            mobile_phone:  da.guardian_1_phone_1 | "",
+                                                                                            parent_user_id: [],
+                                                                                            city: "",
+                                                                                            country_code:  "",
+                                                                                            country: "",
+                                                                                            postal_code:  "",
+                                                                                            state:  "",
+                                                                                            state_code:  "",
+                                                                                            street1:  "",
+                                                                                            street2:  "",
+                                                                                            organization_id:  req.body.organization_id || "",
+                                                                                            organization_name:  "",
+                                                                                            organization_abbrev:  "",
+                                                                                            created_datetime: new Date() || "",
+                                                                                            created_uid:  "",
+                                                                                            is_invited: false,
+                                                                                            is_signup_completed: false,
+                                                                                            profile_image: '',
+                                                                                            roles: guardianRoles,
+                                                                                            organizations: [req.body.organization_id]
                                                                     })
                                                                     //console.log('---quard1insertJson----', quard1insertJson)
                                                                     quard1insertJson.save()
@@ -462,20 +540,38 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                                                                                     totalUserRecordCount = totalUserRecordCount + 1;
                                                                                     //console.log('---quardUserId----', quardUserId)
                                                                                         var atheleteinsertJson = new Users({
-                                                                                            parent_user_id                    : quardUserId,
-                                                                                            first_name                        : da.athlete_1_first_name, 
-                                                                                            last_name                         : da.athlete_1_last_name,
-                                                                                            middle_initial                    : da.athlete_1_middle_name,
-                                                                                            email_address                     : da.athlete_1_email,
-                                                                                            date_of_birth                     : new Date(da.athlete_1_dob),
-                                                                                            gender                            : da.athlete_1_gender,
-                                                                                            street1                           : da.athlete_1_address_1,
-                                                                                            street2                           : da.athlete_1_address_1_cont,
-                                                                                            city                              : da.athlete_1_city_1,
-                                                                                            state                             : da.athlete_1_state_1,
-                                                                                            postal_code                       : da.athlete_1_zip_1,
-                                                                                            country_code                      : da.athlete_1_country_1
+                                                                                            user_id: '',
+                                                                                            first_name: da.athlete_1_first_name || "",
+                                                                                            middle_initial: da.athlete_1_middle_name || '',
+                                                                                            last_name: da.athlete_1_last_name || "",
+                                                                                            suffix:  '',
+                                                                                            gender: da.athlete_1_gender,
+                                                                                            date_of_birth: new Date(da.athlete_1_dob)|| "",
+                                                                                            email_address: da.athlete_1_email || "",
+                                                                                            mobile_phone:  "",
+                                                                                            parent_user_id: quardUserId,
+                                                                                            city: da.athlete_1_city_1 || "",
+                                                                                            country_code: da.athlete_1_country_1 || "",
+                                                                                            country: "",
+                                                                                            postal_code: da.athlete_1_zip_1 || "",
+                                                                                            state:  "",
+                                                                                            state_code: da.athlete_1_state_1 || "",
+                                                                                            street1: da.athlete_1_address_1 || "",
+                                                                                            street2: da.athlete_1_address_1_cont || "",
+                                                                                            organization_id: req.body.organization_id || "",
+                                                                                            organization_name:  "",
+                                                                                            organization_abbrev:  "",
+                                                                                            created_datetime: new Date() || "",
+                                                                                            created_uid:  "",
+                                                                                            is_invited: false,
+                                                                                            is_signup_completed: false,
+                                                                                            profile_image: '',
+                                                                                            roles: playerRoles,
+                                                                                            organizations: [req.body.organization_id]
                                                                                         })
+
+                                                                                            
+                                                                                        
                                                                                         //console.log('---atheleteinsertJson----', atheleteinsertJson)
                                                                                         atheleteinsertJson.save()
                                                                                                 .then(athelete => {
@@ -528,7 +624,7 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                                                                         
                                                                     }else{
                                                                         checkAlreadyinsertedimportUserdata(da.athlete_1_email,da.guardian_1_email_1).then( chkimusersdata => {
-                                                                            if( chkimusersdata != true)
+                                                                            /* if( chkimusersdata != true)
                                                                             {
                                                                                 //console.log('----invalid Email data----' , chkimusersdata )
                                                                                 errorDes = errorDes.concat(chkimusersdata[0].error_description);
@@ -536,7 +632,7 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                                                                                 errorDes.push({ "property_name": "player_email", "is_required": true, "error": "Player Email already Exist" });
                                                                                 error_for_status.push("Player Email already Exist")
                                                                                 updateImportsData(chkimusersdata[0]._id, {processed_flag:"e",error_description: errorDes, error_for_status: error_for_status});
-                                                                            }
+                                                                            } */
                                                                         })
                                                                         errorUserRecordCount = errorUserRecordCount + 1
                                                                     }
@@ -598,8 +694,8 @@ checkAlreadyExists(null,req.body.sports_id, req.body.season_name, req.body.organ
                     message: err.message || "Some error occurred while creating the Data."
                 });
             });
-    }
-})
+    //}
+//})
 
 
 };
@@ -639,6 +735,8 @@ exports.updateimportuserdata = (req, res) => {
 };
 
 exports.findbyOrgAll = (req, res) => {
+
+    
     
     if(logger.exitOnError == true)
     {

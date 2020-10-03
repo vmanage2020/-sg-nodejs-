@@ -28,6 +28,9 @@ var organizationSchema = new mongoose.Schema({
     city: {
         type: String
     },
+    dial_code: {
+        type: String
+    },
     isNewPrimaryUser: {
         type: Boolean
     },

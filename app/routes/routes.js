@@ -44,6 +44,7 @@ module.exports = (app) => {
     app.post('/roles', roles.create);    
     app.get('/roles', roles.findAll);    
     app.get('/roles/:id', roles.findOne);   
+    app.get('/rolesbyname/:id', roles.findbyrole); 
     app.put('/roles/:id', roles.update);    
     app.delete('/roles/:id', roles.delete);
     
