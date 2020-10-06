@@ -10,9 +10,11 @@ function checkAlreadyExists(id,sportId,name)
             if( id != null)
             {
                 _id = new ObjectID(id);
-                var inputjson = {_id: {$ne: _id }, "sport_id":sportId, "position_name": name}
+                var regex = new RegExp(["^", name, "$"].join(""), "i");
+                var inputjson = {_id: {$ne: _id }, "sport_id":sportId, "position_name": regex}
             }else{
-                var inputjson = {"sport_id":sportId, "position_name": name}
+                var regex = new RegExp(["^", name, "$"].join(""), "i");
+                var inputjson = {"sport_id":sportId, "position_name": regex}
             }
 
            return Positions.find(inputjson).then(function(result){

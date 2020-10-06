@@ -11,9 +11,11 @@ function checkAlreadyExists(id,country,name)
             if( id != null)
             {
                 _id = new ObjectID(id);
-                var inputjson = {_id: {$ne: _id }, "country_code":country, "name": name}
+                var regex = new RegExp(["^", name, "$"].join(""), "i");
+                var inputjson = {_id: {$ne: _id }, "country_code":country, "name": regex}
             }else{
-                var inputjson = {"country_code":country, "name": name}
+                var regex = new RegExp(["^", name, "$"].join(""), "i");
+                var inputjson = {"country_code":country, "name": regex}
             }
            return Sports.find(inputjson).then(function(result){
                 //console.log('----result----', result)
@@ -52,7 +54,7 @@ exports.create = (req, res) => {
      const sports = new Sports({
         country                      : req.body.country, 
         country_code                 : req.body.country_code,
-        name                         : req.body.name,
+        name                         : req.body.name.toLowerCase(),
         sport                        : req.body.sport,
         created_datetime             : req.body.created_datetime,
         updated_datetime             : req.body.updated_datetime,
@@ -60,7 +62,7 @@ exports.create = (req, res) => {
     });
 
     // set unique validation for sports by country
-    checkAlreadyExists(null,req.body.country_code, req.body.name).then( valid =>  {
+    checkAlreadyExists(null,req.body.country_code, req.body.name.toLowerCase() ).then( valid =>  {
         
         if( valid == false)
         {
@@ -76,6 +78,8 @@ exports.create = (req, res) => {
             if(logger.exitOnError == true){
             logger.log('info',`${cname} - create DB request`)
             }
+
+           
             // Save Data in the database
                     sports.save()
                     .then(data => {

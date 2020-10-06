@@ -22,6 +22,9 @@ var usersSchema = new mongoose.Schema({
     postal_code: {
         type: String
     },
+    dial_code: {
+        type: String
+    },
     suffix: {
         type: String
     },
