@@ -149,6 +149,27 @@ exports.findAll = (req, res) => {
               });
 };
 
+exports.findlevelbysports = (req, res) => {
+    if(logger.exitOnError == true)
+    {
+        logger.log('info',`${cname} - List All by Sports Id API Service Request`)   
+    }
+    var sportsId = req.params.sportid
+    var orgId = req.params.org
+
+    Levels.find({sport_id: sportsId,organization_id: orgId})
+              .then(levels => {
+                if(logger.exitOnError == true)
+                {
+                    logger.log('info',`${cname} - List All by Sports Id API Service Response`)   
+                }
+                  res.send(levels);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
 
 exports.findbyOrgAll = (req, res) => {
     

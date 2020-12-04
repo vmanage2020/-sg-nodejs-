@@ -169,6 +169,28 @@ exports.findAll = (req, res) => {
               });
 };
 
+exports.findbySportsOrgAll = (req, res) => {
+    if(logger.exitOnError == true)
+    {
+        logger.log('info',`${cname} - List All by Organization Id API Service Request`)   
+    }
+
+    var orgId = req.params.orgid
+    var sportid = req.params.sport
+	Managercustomfield.find({organization_id: orgId, sport_id: sportid })
+              .then(manage => {
+                if(logger.exitOnError == true)
+                {
+                    logger.log('info',`${cname} - List All by Organization Id API Service Response`)   
+                }
+                  res.send(manage);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+};
+
 exports.findbyOrgAll = (req, res) => {
 	if(logger.exitOnError == true)
     {

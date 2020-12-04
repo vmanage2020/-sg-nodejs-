@@ -85,6 +85,8 @@ exports.create = (req, res) => {
         roles                             : req.body.roles,    
         created_uid                       : req.body.created_uid,
         updated_uid                       : req.body.updated_uid,
+        season_id                         : [],
+        level_id                          : [],
         created_datetime                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
     });
 
@@ -138,6 +140,8 @@ exports.create = (req, res) => {
                                 state_code                        : req.body.state_code,
                                 street2                           : req.body.street2,
                                 middle_initial                    : req.body.middle_initial,
+                                season_id                         : [],
+                                level_id                          : [],
                                 organizations                     : req.body.organizations,
                                 organization_abbrev               : req.body.organization_abbrev,        
                                 created_uid                       : req.body.created_uid,
@@ -188,6 +192,30 @@ exports.findAll = (req, res) => {
                   });
               });
 };
+
+exports.getPlayers = (req, res) => {
+    
+    var seasonArray = new Array(req.params.season)
+    var levelArray = new Array(req.params.level)
+    var orgid = req.params.orgid
+
+    Users.find({organization_id: orgid, 
+        season_id: {$in: seasonArray }, 
+        level_id: {$in: levelArray } })
+              .then(users => {
+                if(logger.exitOnError == true)
+                {
+                    logger.log('info',`${cname} - List All by Organization Id API Service Response`)   
+                }
+                  res.send(users);
+              }).catch(err => {
+                  res.status(500).send({
+                      message: err.message || "Some error occurred while retrieving data."
+                  });
+              });
+
+};
+
 
 exports.findbyOrgAll = (req, res) => {
     
@@ -309,6 +337,8 @@ exports.update = (req, res) => {
                             mobile_phone                      : req.body.mobile_phone,
                             state_code                        : req.body.state_code,
                             street2                           : req.body.street2,
+                            season_id                         : [],
+                            level_id                          : [],
                             middle_initial                    : req.body.middle_initial,
                             organizations                     : req.body.organizations,
                             organization_abbrev               : req.body.organization_abbrev, 

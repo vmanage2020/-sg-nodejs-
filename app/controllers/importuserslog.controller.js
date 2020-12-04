@@ -22,6 +22,7 @@ var ObjectID = require('mongodb').ObjectID;
 
 
 const readCSV = ( module.exports.readCSV = async ( path ) => {
+    console.log('--file path----', path)
     try {
        const res = await axios( { url: path, method: 'GET', responseType: 'blob' } );
        let records = parse( res.data, {
@@ -309,7 +310,15 @@ const importuserslog = new Importuserslog({
             message: "Already Inserted same data. please check it"
         });
     }else{ */
+        if( req.body.imported_file_url == '')
+        {
+            res.status(500).send({
+                message: "imported_file_url has missing"
+            });
+            return false;
+        }else{
 
+        
             if(logger.exitOnError == true){
             logger.log('info',`${cname} - create DB request`)
             }
@@ -416,6 +425,8 @@ const importuserslog = new Importuserslog({
                                                                                         state_code:  "",
                                                                                         street1:  "",
                                                                                         street2:  "",
+                                                                                        season_id : [],
+                                                                                        level_id : [],
                                                                                         organization_id:  req.body.organization_id || "",
                                                                                         organization_name:  "",
                                                                                         organization_abbrev:  "",
@@ -472,6 +483,8 @@ const importuserslog = new Importuserslog({
                                                                                             state_code:  "",
                                                                                             street1:  "",
                                                                                             street2:  "",
+                                                                                            season_id : [],
+                                                                                            level_id : [],
                                                                                             organization_id:  req.body.organization_id || "",
                                                                                             organization_name:  "",
                                                                                             organization_abbrev:  "",
@@ -539,6 +552,10 @@ const importuserslog = new Importuserslog({
                                                                                     successUserCount = successUserCount+1;
                                                                                     totalUserRecordCount = totalUserRecordCount + 1;
                                                                                     //console.log('---quardUserId----', quardUserId)
+                                                                                    var seasonIds = [];
+                                                                                    var levelsArr = [];
+                                                                                    seasonIds.push(req.body.season_id);
+                                                                                    levelsArr.push(leveldata[0].level_id)
                                                                                         var atheleteinsertJson = new Users({
                                                                                             user_id: '',
                                                                                             first_name: da.athlete_1_first_name || "",
@@ -555,6 +572,8 @@ const importuserslog = new Importuserslog({
                                                                                             country: "",
                                                                                             postal_code: da.athlete_1_zip_1 || "",
                                                                                             state:  "",
+                                                                                            season_id : seasonIds,
+                                                                                            level_id : levelsArr,
                                                                                             state_code: da.athlete_1_state_1 || "",
                                                                                             street1: da.athlete_1_address_1 || "",
                                                                                             street2: da.athlete_1_address_1_cont || "",
@@ -694,6 +713,7 @@ const importuserslog = new Importuserslog({
                     message: err.message || "Some error occurred while creating the Data."
                 });
             });
+        }
     //}
 //})
 

@@ -1,6 +1,11 @@
 
 const Teams = require('../models/teams.model.js');
 
+const logger = require('../../config/logger')
+var cname = 'Team';
+
+var ObjectID = require('mongodb').ObjectID;
+
 // Create and Save a new Data
 exports.create = (req, res) => {
 
@@ -21,20 +26,54 @@ exports.create = (req, res) => {
         sport_id                          : req.body.sport_id,
         level                             : req.body.level,
         team_name                         : req.body.team_name,
-        team_id                           : req.body.team_id,
         level_id                          : req.body.level_id,
         isActive                          : req.body.isActive,
         organization_name                 : req.body.organization_name,
         created_uid                       : req.body.created_uid,
         updated_uid                       : req.body.updated_uid,
-        created_datetime                  : req.body.created_datetime,
-        updated_datetime                  : req.body.updated_datetime
+        created_datetime                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+        
     });
 
     // Save Data in the database
     teams.save()
     .then(data => {
-        res.send(data);
+
+        if( data._id ){
+                var json = {
+                    is_completed                      : req.body.is_completed, 
+                    season_id                         : req.body.season_id,
+                    managers_count                    : req.body.managers_count,
+                    level_name                        : req.body.level_name,
+                    players_count                     : req.body.players_count,
+                    sport_name                        : req.body.sport_name,
+                    season_start_date                 : req.body.season_start_date,
+                    organization_id                   : req.body.organization_id,        
+                    season_end_date                   : req.body.season_end_date,
+                    isMaster                          : req.body.isMaster,
+                    season_lable                      : req.body.season_lable,
+                    coaches_count                     : req.body.coaches_count,
+                    sport_id                          : req.body.sport_id,
+                    level                             : req.body.level,
+                    team_name                         : req.body.team_name,
+                    team_id                           : data._id,
+                    level_id                          : req.body.level_id,
+                    isActive                          : req.body.isActive,
+                    organization_name                 : req.body.organization_name,
+                    created_uid                       : req.body.created_uid,
+                    updated_uid                       : req.body.updated_uid,
+                    created_datetime                  : new Date(new Date().setUTCHours(0, 0, 0, 0)).toISOString()
+                }
+                Teams.findByIdAndUpdate(data._id, json, {new: true}, function (err, teamdata) {
+
+                    if(logger.exitOnError == true){
+                        logger.log('info',`${cname} - create API Service response`)
+                        }
+
+                res.send(teamdata);
+                });
+        }
+        //res.send(data);
     }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while creating the Data."

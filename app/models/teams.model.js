@@ -8,7 +8,7 @@ var teamsSchema = new mongoose.Schema({
         type: String
     },
     managers_count: {
-        type: Boolean
+        type: String
     },
     level_name: {
         type: Array
@@ -65,10 +65,10 @@ var teamsSchema = new mongoose.Schema({
         type: String
     },
     created_datetime: {
-        type:String
+        type: Date, default:Date.now()
     },
     updated_datetime: {
-        type:String
+        type: Date, default:Date.now()
     }
 });
 

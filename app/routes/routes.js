@@ -20,6 +20,14 @@ module.exports = (app) => {
     const feedcomments        = require('../controllers/feedcomments.controller.js');
 
     const importuserslog      = require('../controllers/importuserslog.controller.js');
+    const teammembers         = require('../controllers/teammembers.controller.js')
+
+    // Team members
+    app.post('/teammembers', teammembers.create);
+    //app.get('/countries', teammembers.findAll);
+    app.get('/teammembers/:teamid', teammembers.findByTeam);
+    //app.put('/countries/:id', teammembers.update);
+    app.delete('/teammembers/:id', teammembers.delete);
 
     // Country
     app.post('/countries', country.create);
@@ -77,6 +85,7 @@ module.exports = (app) => {
     app.delete('/levels/:id', levels.delete);
     
     app.get('/levelsbyorg/:id', levels.findbyOrgAll);
+    app.get('/levelsbysportsandorg/:sportid/:org', levels.findlevelbysports);
     
     // Tags
     app.post('/tags', tags.create);    
@@ -104,7 +113,8 @@ module.exports = (app) => {
     app.delete('/coachcustomfield/:id', coachcustomfield.delete);
     
     app.get('/coachcustomfieldbyorg/:id', coachcustomfield.findbyOrgAll);  
-    
+    app.get('/coachmetadatabysportsorg/:orgid/:sport', coachcustomfield.findbySportsOrgAll);
+
     // Manager
     app.post('/managercustomfield', managercustomfield.create);    
     app.get('/managercustomfield', managercustomfield.findAll);    
@@ -113,6 +123,7 @@ module.exports = (app) => {
     app.delete('/managercustomfield/:id', managercustomfield.delete);
     
     app.get('/managercustomfieldbyorg/:id', managercustomfield.findbyOrgAll); 
+    app.get('/managermetadatabysportsorg/:orgid/:sport', managercustomfield.findbySportsOrgAll);
     
     // Player Meta data
     app.post('/playermetadata', playermetadata.create);    
@@ -122,6 +133,7 @@ module.exports = (app) => {
     app.delete('/playermetadata/:id', playermetadata.delete);
     
     app.get('/playermetadatabyorg/:id', playermetadata.findbyOrgAll); 
+    app.get('/playermetadatabysportsorg/:orgid/:sport', playermetadata.findbySportsOrgAll);
     
     //Users
     app.post('/users', users.create);    
@@ -131,6 +143,7 @@ module.exports = (app) => {
     app.delete('/users/:id', users.delete);
 
     app.get('/usersbyorg/:id', users.findbyOrgAll);   
+    app.get('/playersList/:season/:level/:orgid', users.getPlayers);
     
     // Teams
     app.post('/teams', teams.create);    
@@ -147,7 +160,7 @@ module.exports = (app) => {
     app.delete('/seasons/:id', seasons.delete);
 
     app.get('/seasonsbyorg/:id', seasons.findseasonbyorg);  
-    app.get('/seasonsbysports/:id', seasons.findseasonbysports);  
+    app.get('/seasonsbysportsandorg/:sportid/:org', seasons.findseasonbysports);  
     
     // Organizations
     app.post('/organization', organization.create);    

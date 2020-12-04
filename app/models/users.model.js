@@ -13,6 +13,12 @@ var usersSchema = new mongoose.Schema({
     parent_user_id: {
         type: Array
     },
+    season_id: {
+        type: Array
+    },
+    level_id:{
+        type: Array
+    },
     country_code: {
         type: String
     },

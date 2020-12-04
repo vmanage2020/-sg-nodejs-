@@ -1,6 +1,6 @@
 
 const Seasons = require('../models/seasons.model.js');
-
+const moment = require("moment")
 const logger = require('../../config/logger')
 var cname = 'Seasons';
 
@@ -232,9 +232,14 @@ exports.findseasonbysports = (req, res) => {
         logger.log('info',`${cname} - List All by Sports Id API Service Request`)   
     }
 
-    var sportId = req.params.id 
+    var sportId = req.params.sportid 
+    var orgId = req.params.org
+    let curdate=moment().format("YYYY-MM-DD")
 
-    Seasons.find({sports_id: sportId})
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+    Seasons.find({sports_id: sportId, organization_id: orgId,season_end_date: { $gte: curdate } })
               .then(seasons => {
                 if(logger.exitOnError == true)
                 {
